@@ -19,16 +19,24 @@ class Student {
         cout<<"Enter the fee: ";
         cin>>fee;
     }
+    void display() {
+    cout << "Roll Number: " << rollno << endl;
+    cout << "Name: " << name << endl;
+    cout << "Fee: " << fee << endl;
+}
 };
 
 int main() {
     Student s1; 
-
+    s1.display();
     return 0;
 }
 
 /*Output
 Enter the roll number: 140
 Enter the name: Sani
-Enter the fee: 2000
+Enter the fee: 300000
+Roll Number: 140
+Name: Sani
+Fee: 300000
 */
